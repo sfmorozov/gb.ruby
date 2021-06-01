@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function NumToArr(){
+            let arr = [];
+            for (let i=1; i <= n; i++){
+                arr.push(i);
+            }
+            return arr;
+        };
+        function ArrSum(){
+            let sum = 0;
+           for(let i=0; i < ar.length; i++){
+                sum = sum + ar[i];
+           }
+           return sum;
+        }
+        function Rand(){
+            let num = [];
+            for(i=1; i <= n; i++){
+                let randNum = parseInt(Math.random()*100);
+                num.push(randNum)
+            }
+            return num;
+        }
+        function div2(){
+           let res = [];
+           for (let i=0; i < ar.length; i++){
+               if (ar[i]%2 == 0){
+                   res.push(ar[i]);
+               }
+           }
+           return res;
+        }
+
+        let n = +prompt('Введите любое число');
+        let ar = Rand(n);
+        alert('Рандомный массив '+ar);
+        alert('Сумма чисел в массиве ' +ArrSum(ar));
+        alert('Максимум из массива ' +Math.max(...ar));
+        alert('Минимум из массива ' +Math.min(...ar));
+        alert('Чётные элементы массива '+div2(ar));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

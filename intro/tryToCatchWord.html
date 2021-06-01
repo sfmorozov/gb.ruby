@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let catchCount = 0;
+        let answer = prompt('Зимой и летом одним цветом!');
+        if ((answer == 'ель') || (answer == 'ёлка')) {
+            alert ('Угадал');
+            catchCount++;
+        } else {
+            alert ('Не угадал!');
+        }
+        answer = prompt('Два кольца, два конца, посередине - гвоздик.');
+        if (answer == 'ножницы') {
+            alert ('Угадал, игра окончена');
+            catchCount++;
+        } else {
+            alert ('Не угадал!');
+        }
+
+        if (catchCount == 1){
+        alert ('Угадал ' + catchCount + ' загадку');
+        } else if ((catchCount>=2)&(catchCount<5)){
+            alert ('Угадал ' + catchCount + ' загадки');
+        } else {
+            alert ('Угадал ' + catchCount + ' загадок');
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

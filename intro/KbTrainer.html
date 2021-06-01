@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function getLevel(lvl){
+        //     let tmp = [];
+        //     switch (lvl){
+        //         case 2:
+        //             for (let i=0; i<10; i++){
+        //                 tmp.push(lvl2[Math.floor(Math.random() * lvl)]);
+        //             }
+        //         break;
+        //         case 3:
+        //             for (let i=0; i<10; i++){
+        //                 tmp.push(lvl3[Math.floor(Math.random() * lvl)]);
+        //             }
+        //         break;
+                    
+        //     }
+        //     let ext = tmp.toString();
+        //     return ext;
+        // }
+
+        // let ownLv=[];
+        // let answer=0;
+        // let lvl = +prompt('На каком уровне мы остановились?');
+        // let lvl2 = ['ф','ы','в','а'];
+        // let lvl3 = ['о','л','д','ж'];
+        // do{
+        //     ownLvl = getLevel(lvl)
+        //     answer = prompt('Поставьте мизинец левой руки на букву Ф, безымянный палец — на Ы, средний — на В, указательный — на А. Мизинец правой руки на букву Ж, безымянный палец — на Д, средний — на Л, указательный — на О. Запомните расположение пальцев. Повторяйте за мной '+ownLvl);
+        //     answer = answer.split(',');
+            
+        // } while (ownLvl = answer);
+
+        function getText(ltr,len,lvl){
+            let txt = "";
+            for (let i=0; i < len; i++){
+                let n = getRnd(lvl-1);
+                txt = txt + ltr[n];
+            }
+            return txt;
+        }
+        function getRnd(m){
+            return Math.round(Math.random() * m);
+        }
+
+        let lvl = +prompt('На каком уровне мы остановились?');
+        
+        while(true){
+            alert('Поставьте мизинец левой руки на букву Ф, безымянный палец — на Ы, средний — на В, указательный — на А. Мизинец правой руки на букву Ж, безымянный палец — на Д, средний — на Л, указательный — на О. Запомните расположение пальцев. Повторяйте за мной ');
+            let txt = getText(['ф','ы','в','а','о','л','д','ж'],10,lvl);
+            let usrTxt = prompt(txt);
+            if (usrTxt == txt){
+                lvl = lvl + 1;
+                if (lvl=9){
+                    alert('Игра окончена!');
+                    break;
+                }else{
+                    alert("Всё верно! Переходим на следующий уровень!");
+                }
+            } else {
+                alert('Вы ошиблись, попробуйте ещё раз!');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

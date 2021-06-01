@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let deposit= +prompt('Сумма вклада');
+        let percent= +prompt('Процент вклада, годовых')/100;
+        let endPeriod = 5;
+        // let period= +prompt('Срок вклада, месяцев');
+        for (let period=1; period<=5; period++){
+            alert('Сумма вклада на '+period+' год равна '+Math.round(deposit=deposit+(deposit*percent)));
+        }   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
