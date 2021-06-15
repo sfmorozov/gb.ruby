@@ -1,17 +1,17 @@
-require 'date'
+# frozen_string_literal: true
 
-month = {
-  'Jan' => 'Январь',
-  'Feb' => 'Февраль',
-  'Mar' => 'Март',
-  'Apr' => 'Апрель',
-  'May' => 'Май',
-  'Jun' => 'Июнь',
-  'Jul' => 'Июль',
-  'Aug' => 'Август',
-  'Sep' => 'Сентябрь',
-  'Okt' => 'Октябрь',
-  'Nov' => 'Ноябрь',
-  'Dec' => 'Декабрь'
-}
-puts Time.new.strftime('%d %b %Y').to_s.sub!(/\w\w\w/, month)
+MONTH = {
+  'Jan' => 'Января',
+  'Feb' => 'Февраля',
+  'Mar' => 'Марта',
+  'Apr' => 'Апреля',
+  'May' => 'Мая',
+  'Jun' => 'Июня',
+  'Jul' => 'Июля',
+  'Aug' => 'Августа',
+  'Sep' => 'Сентября',
+  'Okt' => 'Октября',
+  'Nov' => 'Ноября',
+  'Dec' => 'Декабря'
+}.freeze
+puts Time.new.strftime('%d %b %Y').to_s.sub!(/\w\w\w/, MONTH)
