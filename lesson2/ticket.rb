@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
+require 'date'
 class Ticket
+  ##
+  # Класс Ticket описывает сущность "Билет в кино"
   def date
-    '10.07.2021'
+    Date.new(2022, 1, 1)
   end
 
   def price
@@ -21,10 +24,3 @@ class Ticket
     'Однажды в НИИЧАВО'
   end
 end
-
-tkt = Ticket.new
-puts "Дата фильма: #{tkt.date}"
-puts "Ряд: #{tkt.row}"
-puts "Место: #{tkt.seat}"
-puts "Название фильма: #{tkt.event}"
-puts "Стоимость: #{tkt.price}"

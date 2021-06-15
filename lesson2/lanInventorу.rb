@@ -25,5 +25,4 @@ hst = Host.new
 puts "ФИО: #{usr.fio}"
 puts "Профессия: #{usr.prof}"
 f = File.new('user.txt', 'w')
-f.puts "ФИО: #{usr.fio}"
-f.puts "Профессия: #{usr.prof}"
+f.write "ФИО: #{usr.fio}\nПрофессия: #{usr.prof}"

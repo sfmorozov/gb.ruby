@@ -2,4 +2,4 @@
 
 puts 'Rubocop syntax test'
 
-# Userful stuff!
+# Useful stuff!
