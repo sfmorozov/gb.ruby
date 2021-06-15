@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-colors = {
+COLORS = {
   red: 'Красный',
   orange: 'Оранжевый',
   yellow: 'Жёлтый',
@@ -8,5 +8,5 @@ colors = {
   blue: 'Голубой',
   indigo: 'Синий',
   violet: 'Фиолетовый'
-}
+}.freeze
 puts colors
