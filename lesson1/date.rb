@@ -14,4 +14,4 @@ MONTH = {
   'Nov' => 'Ноября',
   'Dec' => 'Декабря'
 }.freeze
-puts Time.new.strftime('%d %b %Y').to_s.sub!(/\w\w\w/, MONTH)
+puts Time.new.strftime('%d %b %Y').to_s.sub(/\w\w\w/, MONTH)
