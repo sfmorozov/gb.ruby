@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+##
+#
+
 def month(m)
   @m = m
   x = m[-1].to_i

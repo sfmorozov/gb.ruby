@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+##
+#
 class Hello
   def hello
     x = Time.now.hour

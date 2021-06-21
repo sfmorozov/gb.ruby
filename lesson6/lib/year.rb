@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+##
+#
+
 def year(y)
   @y = y
   x = y[-1].to_i
