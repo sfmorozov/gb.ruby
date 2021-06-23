@@ -2,4 +2,4 @@
 
 require_relative 'lib/hello'
 
-Hello.new.hello
+puts Hello.new.hello
