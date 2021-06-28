@@ -3,5 +3,5 @@
 require_relative 'lib/const'
 
 print 'Введите номер дня недели: '
-day = gets.chomp
+day = gets.to_i
 p WEEK[day]
