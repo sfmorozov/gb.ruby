@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
+require_relative 'lib/object'
+
 arr = []
 ARGV.map do |x|
   case true
-  when (x.to_f - x.to_i) === 0
+  when x.is_integer?
     arr.push(x.to_i)
   else
     puts "#{x} не является целым"
