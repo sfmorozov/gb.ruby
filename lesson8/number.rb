@@ -3,12 +3,5 @@
 require_relative 'lib/object'
 
 arr = []
-ARGV.map do |x|
-  case true
-  when x.is_integer?
-    arr.push(x.to_i)
-  else
-    puts "#{x} не является целым"
-  end
-end
+ARGV.map { |x| x.is_integer? ? arr.push(x.to_i) : (puts "#{x} не является целым") }
 p "Максимальное число из введённых целых #{arr} - #{arr.max}"
