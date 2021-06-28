@@ -4,7 +4,6 @@ require_relative 'lib/object'
 
 puts 'Введите что-нибудь в качестве аргумента'
 input = gets($/).chomp
-p input
 if input.is_float?
   puts 'Вещественное'
 elsif input.is_integer?

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 puts 'Введите число в качестве аргумента'
-input = gets($/).chomp
+input = gets($/)
 case true
 when input.to_i.positive? || input.to_f.positive?
   puts 'Число больше нуля'

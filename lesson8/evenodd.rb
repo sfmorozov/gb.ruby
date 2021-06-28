@@ -3,7 +3,7 @@
 require_relative 'lib/object'
 
 puts 'Введите число в качестве аргумента'
-input = gets($/).chomp
+input = gets($/)
 if input.to_i != 0
   input.to_i.odd? ? (puts 'Нечётное') : (puts 'Чётное')
 else
