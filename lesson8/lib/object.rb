@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 class Object
-  def is_float?
+  def float?
     self.to_f.to_s == self.to_s
   end
   
-  def is_integer?
+  def integer?
     self.to_i.to_s == self.to_s
   end
 end

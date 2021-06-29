@@ -3,5 +3,5 @@
 require_relative 'lib/week'
 
 print 'Номер дня недели: '
-day = gets.chomp
+day = gets.to_i
 p week(day)

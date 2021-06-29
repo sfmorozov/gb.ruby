@@ -3,6 +3,5 @@
 require_relative 'const'
 
 def week(day)
-  @day = day
   WEEK[day]
 end

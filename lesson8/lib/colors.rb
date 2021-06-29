@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 def colors(num)
-  @num = num
   case num
   when 1
     'Красный'
@@ -17,7 +16,5 @@ def colors(num)
     'Синий'
   when 7
     'Фиолетовый'
-  else
-    nil
   end
 end
