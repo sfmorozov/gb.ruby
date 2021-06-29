@@ -2,19 +2,12 @@
 
 def colors(num)
   case num
-  when 1
-    'Красный'
-  when 2
-    'Оранжевый'
-  when 3
-    'Жёлтый'
-  when 4
-    'Зелёный'
-  when 5
-    'Голубой'
-  when 6
-    'Синий'
-  when 7
-    'Фиолетовый'
+  when 1 then 'Красный'
+  when 2 then 'Оранжевый'
+  when 3 then 'Жёлтый'
+  when 4 then 'Зелёный'
+  when 5 then 'Голубой'
+  when 6 then 'Синий'
+  when 7 then 'Фиолетовый'
   end
 end
