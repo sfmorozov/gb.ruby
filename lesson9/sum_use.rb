@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/sum'
+require_relative 'lib/custom_methods'
 
-print 'Введите числовые аргументы для сложения: '
+print 'Введите через пробел числовые аргументы для сложения: '
 puts "Сумма составляет: #{sum}"
