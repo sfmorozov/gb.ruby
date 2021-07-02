@@ -1,4 +1,7 @@
 # frozen_string_literal: true
+
+##
+#
 class User
   def fio(last_name, first_name, pathronymic)
     "#{first_name} #{pathronymic} #{last_name}"
@@ -11,4 +14,12 @@ end
 
 def leap_year?
   (gets.to_i % 4).zero?
+end
+
+def cel2far(value)
+  (1.8 * value + 32).truncate(2)
+end
+
+def far2cel(value)
+  (0.556 * (value - 32)).truncate(2)
 end
