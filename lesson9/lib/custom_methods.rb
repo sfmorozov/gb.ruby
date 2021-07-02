@@ -23,3 +23,7 @@ end
 def far2cel(value)
   (0.556 * (value - 32)).truncate(2)
 end
+
+def convert(*values)
+  values.map { |e| e * 1000}
+end
