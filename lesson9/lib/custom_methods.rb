@@ -25,9 +25,14 @@ def far2cel(value)
 end
 
 def convert(*values)
-  values.map { |e| e * 1000}
+  values.map { |e| e * 1000 }
 end
 
 def fibo(n)
   n < 2 ? n : fibo(n - 1) + fibo(n - 2)
+end
+
+def fibobine(n)
+  require_relative 'const'
+  (PHI**n / SQRT5 + 0.5).truncate(0)
 end
