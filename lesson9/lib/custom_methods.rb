@@ -12,8 +12,8 @@ def sum
   gets.chomp.split(' ').map(&:to_i).sum
 end
 
-def leap_year?
-  (gets.to_i % 4).zero?
+def leap_year?(y)
+  (y % 4).zero? && !(y % 100).zero? || (y % 400).zero?
 end
 
 def cel2far(value)
