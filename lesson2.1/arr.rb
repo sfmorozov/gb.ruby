@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require_relative 'lib/custom_methods'
 
 i = 0
 arr = []
-while i <= 9 do
+while i <= 9
   arr[i] = rand(99)
   i += 1
 end
