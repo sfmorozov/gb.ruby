@@ -29,3 +29,17 @@ def max_it(arr)
   arr.map { |i| i > arr_max ? arr_max = i : arr_max }
   arr_max
 end
+
+def sort(users)
+  swap = true
+  size = users.size - 1
+  while swap
+    swap = false
+    for i in 0...size
+        swap = users[i] > users[i + 1]  
+        users[i], users[i + 1] = users[i + 1], users[i] if users[i] > users [i + 1]
+    end
+    size -= 1 
+  end
+  users.join(', ')
+end
