@@ -8,4 +8,7 @@ loop do
   arr << gets.chomp
   arr.pop && break if arr.last == 'stop'
 end
+f = File.new('lib/colors.txt', 'w')
+arr.each { |x| f.puts(x)}
+f.close
 p arr
