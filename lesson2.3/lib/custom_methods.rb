@@ -7,3 +7,7 @@ end
 def convert(date)
   date.strftime('%a : %d %b %Y')
 end
+
+def everyday (year, &block)
+  (Date.new(year, 1, 1)..Date.new(year, 12, 31)).each(&block)
+end
