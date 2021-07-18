@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lib/custom_class'
 
 shop = Building.new
