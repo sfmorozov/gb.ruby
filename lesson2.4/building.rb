@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/building'
+require_relative 'lib/buildings'
 
 shop = Building.new
 shop.build
