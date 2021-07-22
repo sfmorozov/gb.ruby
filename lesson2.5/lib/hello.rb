@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
+##
+#
 class Hello
   def initialize(param)
-    @@param = param
+    @param = param
   end
+
   def say
-    "Hello, #{@@param}"
+    "Hello, #{@param}!"
   end
 end
-
-a = Hello.new('Ruby')
-p a.say
