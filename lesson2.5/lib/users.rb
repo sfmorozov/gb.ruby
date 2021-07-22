@@ -2,6 +2,20 @@
 
 ##
 #
+class Group
+  attr_accessor :list
+
+  def initialize(list)
+    @list = list
+  end
+
+  def each(&block)
+    list.each(&block)
+  end
+end
+
+##
+#
 class User
   attr_accessor :first_name, :last_name, :pathronymic
 
