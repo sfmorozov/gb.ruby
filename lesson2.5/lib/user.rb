@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+##
+#
 class User
   attr_accessor :first_name, :last_name, :pathronymic
 
@@ -12,6 +16,4 @@ class User
   def view
     "#{@last_name} #{@first_name} #{@pathronymic}"
   end
-
 end
-
