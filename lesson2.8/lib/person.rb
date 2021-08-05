@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ##
 #
 class Person
@@ -11,5 +13,7 @@ class Person
 end
 
 class User < Person; end
+
 class Admin < Person; end
+
 class Moder < Person; end

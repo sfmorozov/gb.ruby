@@ -35,4 +35,3 @@ end
   print "#{person.email} #{person}\n"
   print "---------------------------------- \n"
 end
-

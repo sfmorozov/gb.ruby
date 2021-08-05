@@ -1,13 +1,14 @@
+# frozen_string_literal: true
+
 require_relative 'lib/person'
 
 a = User.new name: 'Иван',
              surename: 'Иванович',
              pathronymic: 'Иванов'
 
-
 b = Admin.new name: 'Пётр',
               surename: 'Петрович',
-               pathronymic: 'Петров'
+              pathronymic: 'Петров'
 
 c = Moder.new name: 'Алексей',
               surename: 'Алексеевич',
