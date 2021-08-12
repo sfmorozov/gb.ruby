@@ -2,7 +2,7 @@
 
 NAME = ARGV.last
 SIZE = ARGV.first.to_i
-File.new(NAME, 'w') if File.exist?(NAME)
+File.new(NAME, 'w')
 File.open(NAME, 'w') do |f|
   f.print ' ' * SIZE
 end
