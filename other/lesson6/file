@@ -1,0 +1,22 @@
+1. SELECT
+    flow_number,
+    name,
+    started_at
+    FROM streams INNER JOIN courses
+    ON  course_id = courses.id;
+    
+2. SELECT
+    name,
+    SUM (students_amount) AS students_amount
+    FROM streams INNER JOIN courses
+    ON  course_id = courses.id
+    GROUP BY name;
+    
+3. SELECT
+    teachers.id,
+    name,
+    surname,
+    AVG (performance)
+    FROM teachers LEFT JOIN academic_performance
+    ON teacher_id = teachers.id 
+    GROUP BY teacher_id;

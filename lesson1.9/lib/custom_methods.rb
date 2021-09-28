@@ -3,8 +3,11 @@
 ##
 #
 class User
-  def fio(last_name, first_name, pathronymic)
-    "#{first_name} #{pathronymic} #{last_name}"
+  def initialize(last_name, first_name, pathronymic)
+    # "#{first_name} #{pathronymic} #{last_name}"
+    @last_name = last_name
+    @first_name = first_name
+    @pathronymic = pathronymic
   end
 end
 

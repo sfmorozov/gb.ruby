@@ -1,0 +1,36 @@
+1. SELECT
+    flow_number,
+    (SELECT name FROM courses WHERE id = course_id) AS name,
+    students_amount
+    FROM streams WHERE students_amount >= 40;
+
+2. SELECT
+    ((SELECT surename FROM teachers WHERE id = teacher_id) || ' ' 
+    || (SELECT name FROM teachers WHERE id = teacher_id)) AS name,
+    (SELECT flow_number FROM streams WHERE id = stream_id) AS num,
+    performance
+
+    FROM academic_performance WHERE performance IS
+    (SELECT MIN(performance) FROM academic_performance)
+    OR performance IS NOT (SELECT MAX(performance) 
+    FROM academic_performance);
+
+3. SELECT
+   teacher_id,
+   AVG(performance) AS avg
+   FROM academic_performance
+   WHERE teacher_id = (SELECT id FROM teachers WHERE name = 'Николай'AND surename = 'Савельев');
+
+4. SELECT
+    stream_id,
+    (SELECT name FROM teachers WHERE id = teacher_id) || ' '
+    || (SELECT surename FROM teachers WHERE id = teacher_id) AS Name
+    FROM academic_performance
+    WHERE teacher_id = (SELECT id FROM teachers WHERE name = 'Наталья'AND surename = 'Петрова')
+UNION
+    SELECT
+    stream_id,
+    (SELECT name FROM teachers WHERE id = teacher_id) || ' '
+    || (SELECT surename FROM teachers WHERE id = teacher_id) AS Name
+    FROM academic_performance
+    WHERE performance < 4.8; 
