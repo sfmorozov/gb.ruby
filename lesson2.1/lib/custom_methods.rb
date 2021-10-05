@@ -11,11 +11,11 @@ def minn(arr)
 end
 
 def maxx(arr)
-    arr_max = arr[0]
-    for i in arr do
-        i > arr_max ? arr_max = i : arr_max
-    end
-    arr_max
+  arr_max = arr[0]
+  arr.each do |i|
+    i > arr_max ? arr_max = i : arr_max
+  end
+  arr_max
 end
 
 def min_it(arr)
@@ -35,11 +35,18 @@ def sort(users)
   size = users.size - 1
   while swap
     swap = false
-    for i in 0...size
-        swap = users[i] > users[i + 1]  
-        users[i], users[i + 1] = users[i + 1], users[i] if users[i] > users [i + 1]
+    (0...size).each do |i|
+      swap = users[i] > users[i + 1]
+      users[i], users[i + 1] = users[i + 1], users[i] if users[i] > users [i + 1]
     end
-    size -= 1 
+    size -= 1
   end
   users.join(', ')
+end
+
+def find_monday(value)
+  loop do
+    value.monday? ? (return value) : (value -= 86_400)
+    break unless true
+  end
 end
