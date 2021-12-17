@@ -11,4 +11,4 @@ m = 0
 m += 1 while (Date.parse(date_of_birth) >> m + 1) <= Date.today
 y = m / 12
 m -= (y * 12)
-puts "Ваш возраст #{y} #{year(y)} #{m} #{month(m)}"
+puts "Ваш возраст #{y} #{year(y)} #{m if m > 0} #{month(m)}"

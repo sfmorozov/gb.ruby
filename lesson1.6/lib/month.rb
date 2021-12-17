@@ -5,7 +5,11 @@
 
 def month(m)
   @m = m
-  x = m.to_s[-1].to_i
+  case m
+  when (10..12)
+    return 'месяцев'
+  end
+    x = m.to_s[-1].to_i
   case x
   when 1
     'месяц'
@@ -14,6 +18,6 @@ def month(m)
   when (5..9)
     'месяцев'
   when 0
-    'месяцев'
+    'ровно'
   end
-end
+  end
