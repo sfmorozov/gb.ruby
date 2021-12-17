@@ -5,7 +5,7 @@
 
 def month(m)
   @m = m
-  x = m[-1].to_i
+  x = m.to_s[-1].to_i
   case x
   when 1
     'месяц'

@@ -5,7 +5,7 @@
 
 def year(y)
   @y = y
-  x = y[-1].to_i
+  x = y.to_s[-1].to_i
   case x
   when 1
     'год'
